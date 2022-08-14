@@ -1,0 +1,137 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    margin: 0 50px;
+}
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;/*cima-baixo direita-esquerda*/
+}
+
+.caixa {
+    position: relative;
+    width:940px;/*LARGURA PADRÃO*/
+    margin: 0 auto;
+}
+
+nav {
+    position:absolute;
+    top:110px;
+    right:0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; /*top,rigth,down,left*/
+}
+
+nav a {
+    text-transform: uppercase;/*TUDO MAIUSCULO*/
+    color: #000000;
+    font-weight: bold;/*NEGRITO*/
+    font-size: 22px;
+    text-decoration: none;/*SEM DECORAÇÃO NO TEXTO*/
+}
+
+nav a:hover { /*quando mouse estiver por cima de determinado elemento*/
+    color: #C78D48;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color:#FFFFFF;
+    font-size:13px;
+    margin-top: 20px;
+}
+
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px 0;
+    padding:10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2); ;
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+
+td, th {
+    border:1px solid black;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, form, .input-padrao, .enviar {
+        width: auto;
+    }
+
+    #mensagem {
+        width: 65%;
+        border:1px solid black;
+        margin: 2% 0;
+    }
+
+    main {
+        margin: auto 5%;
+        text-align: left;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    label, input {
+        text-align: left;
+    }
+}
